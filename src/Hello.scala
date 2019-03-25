@@ -28,8 +28,8 @@ object Hello extends App {
   // higher order functions:
   //the same output
   println(fruitBasket.filter((fruit: Fruit) => fruit.name == "apple")) // filter(lambda)
-  println(fruitBasket.filter(x => x.name == "apple"))
-  println(fruitBasket.filter(_.name == "apple"))
+  println(fruitBasket.filter(fruit => fruit.name == "apple")) //shorter
+  println(fruitBasket.filter(_.name == "apple")) //even shorter, but underscore works only if variable is used only once on right side
 }
 
 
